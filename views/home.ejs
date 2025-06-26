@@ -1,0 +1,27 @@
+<%- include('partials/header.ejs');%>
+<%- include('partials/navbar.ejs');%>
+<body>
+<h1>Previsão do Tempo</h1>
+
+<form action="/" method="POST">
+  <input type="text" name="city" placeholder="Digite a cidade" required>
+  <button type="submit">Buscar</button>
+</form>
+
+<% if (error) { %>
+  <p style="color:red;"><%= error %></p>
+<% } %>
+
+<% if (weather) { %>
+  <div class="weather-card">
+    <h2><%= weather.city %></h2>
+    <p><strong>Descrição:</strong> <%= weather.description %></p>
+    <p><strong>Temperatura:</strong> <%= weather.temperature %>°C</p>
+    <p><strong>Sensação térmica:</strong> <%= weather.feelsLike %>°C</p>
+    <p><strong>Umidade:</strong> <%= weather.humidity %>%</p>
+    <p><strong>Vento:</strong> <%= weather.wind %> km/h</p>
+  </div>
+<% } %>
+
+</body>
+</html>

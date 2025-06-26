@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'League Spartan', sans-serif ;
+  text-align: center;
+}
+form {
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #60a561;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+h2 {
+    color: #fff;
+    background-color: #60a561;
+    border-radius: 30px 10px 30px 30px;
+    padding: 10px;
+}
+.weather-card {
+  background: white;
+  padding: 20px;
+  margin: auto;
+  display: inline-block;
+  justify-content: left;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.navbar{
+    background-color: #20255c;
+
+}
+.logo-nav{
+    height: 100px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
